@@ -1,9 +1,16 @@
-packages:
-    - name: extraction_function
-        actions:
-            - name: body
-        runtime: 'python3.11'
-    - name: preprocessing
-        actions:
-            - name: preprocess
-        runtime: 'python3.11'
+version: '1.0'
+services:
+  - name: extraction_function
+    run_command: python3.11 body.py
+    source_dir: ./extraction_function
+    environment_slug: python
+    environment:
+      - key: PYTHON_VERSION
+        value: "3.11"
+  - name: preprocessing
+    run_command: python3.11 preprocess.py
+    source_dir: ./preprocessing
+    environment_slug: python
+    environment:
+      - key: PYTHON_VERSION
+        value: "3.11"
