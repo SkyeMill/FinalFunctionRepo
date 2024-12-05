@@ -1,6 +1,6 @@
 packages:
   - name: preprocessing
     functions:
-      - name: preprocessing
+      - name: preprocess
         main: 'packages\preprocessing\preprocess.py'
         runtime: python:3.11
