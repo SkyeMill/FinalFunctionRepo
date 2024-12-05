@@ -1,2 +1,9 @@
 packages:
     - name: extraction_function
+        actions:
+            - name: body
+        runtime: 'python3.11'
+    - name: preprocessing
+        actions:
+            - name: preprocess
+        runtime: 'python3.11'
