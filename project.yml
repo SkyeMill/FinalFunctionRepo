@@ -3,4 +3,4 @@ packages:
     functions:
       - name: preprocessing
         main: 'packages\preprocessing.py'
-        runtime: python:3.11.11
+        runtime: python:default
