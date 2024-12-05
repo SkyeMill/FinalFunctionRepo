@@ -1,7 +1,5 @@
 packages:
-  - name: Functions
+  - name: preprocessing
     functions:
       - name: preprocessing
-        main: 'preprocess.py'
-      - name: extraction_function
-        main: 'body.py'
+        main: 'packages\preprocessing.py'
